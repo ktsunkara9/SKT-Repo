@@ -7,14 +7,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { HomeComponent } from './home/home.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { DailyTasksComponent } from './daily-tasks/daily-tasks.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TasksComponent,
-    HomeComponent
+    HomeComponent,
+    DailyTasksComponent
   ],
   imports: [
     BrowserModule,
