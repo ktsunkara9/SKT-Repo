@@ -31,5 +31,23 @@ export class TasksComponent implements OnInit {
         }
     });
   }
+
+  onAddToDailyTasks(task : string) {
+    console.log(task);
+    let tasks  = [];
+    
+     const val = localStorage.getItem('tasks');
+    if(val != null){
+      tasks = JSON.parse(val);
+    } 
+    
+    tasks.push(task);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+
+  }
+
+  onAddToWeeklyTasks(task : string) {
+
+  }
   
 }
