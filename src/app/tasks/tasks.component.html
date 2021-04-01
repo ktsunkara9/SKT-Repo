@@ -9,7 +9,22 @@
         <button class="btn btn-success" type="button" (click) = onAddTask(task)>Add Task</button>
     </div>
 </div>
+<br>
+<div class="row task-adder justify-content-center" *ngFor="let task of tasks">
+    
+    <div class="col-md-3"> 
+        <button class="btn btn-success" (click)="onAddToDailyTasks(task)"> Add To Daily Tasks</button>
+    </div>
+    <div class="col-md-2">
+        {{task}}
+    </div>
 
-<div class="row" *ngFor="let task of tasks">
-    {{task}}
+    <div class="col-md-2">
+        <button class="btn btn-danger"> - </button>
+    </div>
+    
+    <div class="col-md-3"> 
+        <button class="btn btn-primary" (click)="onAddToWeeklyTasks(task)"> Add To Weekly Tasks</button>
+    </div>
+    
 </div>
