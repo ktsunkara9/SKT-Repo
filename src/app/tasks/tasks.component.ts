@@ -1,8 +1,5 @@
-import { HttpClient, JsonpClientBackend } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
 import { TaskService } from '../services/task.service';
-import { TaskModel } from './models/task.model';
 
 
 @Component({
