@@ -25,9 +25,9 @@ export class TasksComponent implements OnInit {
 
   private getTasks() {
     this.taskService.getTasks().subscribe(data => {
-        for(const task in data){
-          console.log(data[task]);
-          this.tasks.push(data[task]['task']);
+        for(const t in data){
+          console.log(data[t]);
+          this.tasks.push(data[t]['task']);
         }
     });
   }
