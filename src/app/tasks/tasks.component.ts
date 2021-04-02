@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../services/task.service';
 
-
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -10,7 +9,6 @@ import { TaskService } from '../services/task.service';
 export class TasksComponent implements OnInit {
 
   task : string = "";
-
   tasks : string[] =  [];
 
   constructor(private taskService : TaskService) { }
@@ -18,6 +16,8 @@ export class TasksComponent implements OnInit {
   ngOnInit(): void {
     this.getTasks();
   }
+
+ 
 
   onAddTask(task : string) {
     this.taskService.addTask(task);
@@ -49,5 +49,7 @@ export class TasksComponent implements OnInit {
   onAddToWeeklyTasks(task : string) {
 
   }
+
+  
   
 }
