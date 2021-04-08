@@ -1,19 +1,24 @@
 <div class="row task-adder justify-content-center">
-    <div class="col-md-2">
-        <label>Enter Task</label>
-    </div>
-    <div class="col-md-3">
-        <input type="text" [(ngModel)] = "task">
-    </div>
-    <div class="col-md-3">
-        <button class="btn btn-success" type="button" (click) = onAddTask(task)>Add Task</button>
-    </div>
+    <form class="col-sm-12 justify-content-center" >
+        <div class="form-row">
+            <label for="task" class="col-xs-3 col-form-label offset-md-1">Enter Task</label>
+            <input type="text" id="task" name="task" class="form-control col-sm-4 offset-md-1" ngModel>
+            <select name="quadrant" id="quadrant" class="form-control col-sm-1 offset-md-1">
+                <option value="Q1"> Q1 </option>
+                <option value="Q2"> Q2 </option>
+                <option value="Q3"> Q3 </option>
+                <option value="Q4"> Q4 </option>
+            </select>
+            <!-- <button class="btn btn-success" type="button" (click) = onAddTask(task)>Add Task</button> -->
+            <button class="btn btn-success offset-md-1" type="submit">Add Task</button>
+        </div>
+    </form>
 </div>
 <br>
 <div class="row task-adder justify-content-center" *ngFor="let task of tasks">
     
     <div class="col-md-3"> 
-        <button class="btn btn-success" (click)="onAddToDailyTasks(task)"> Add To Daily Tasks</button>
+        <button class="btn btn-success"> Add To Daily Tasks</button>
     </div>
     <div class="col-md-2">
         {{task}}
@@ -24,7 +29,7 @@
     </div>
     
     <div class="col-md-3"> 
-        <button class="btn btn-primary" (click)="onAddToWeeklyTasks(task)"> Add To Weekly Tasks</button>
+        <button class="btn btn-primary"> Add To Weekly Tasks</button>
     </div>
     
 </div>
