@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { TaskService } from '../services/task.service';
 
 @Component({
@@ -15,12 +16,6 @@ export class TasksComponent implements OnInit {
 
   ngOnInit(): void {
     this.getTasks();
-  }
-
- 
-
-  onAddTask(task : string) {
-    this.taskService.addTask(task);
   }
 
   private getTasks() {
@@ -50,6 +45,10 @@ export class TasksComponent implements OnInit {
 
   }
 
+  onAddTask(form: NgForm) {
+    console.log("Submitted", form.value.task);
+    this.tasks.push(form.value.task);
+  }
   
   
 }

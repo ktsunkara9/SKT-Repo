@@ -1,5 +1,5 @@
 <div class="row task-adder justify-content-center">
-    <form class="col-sm-12 justify-content-center" >
+    <form class="col-sm-12 justify-content-center" (ngSubmit)="onAddTask(form)" #form="ngForm">
         <div class="form-row">
             <label for="task" class="col-xs-3 col-form-label offset-md-1">Enter Task</label>
             <input type="text" id="task" name="task" class="form-control col-sm-4 offset-md-1" ngModel>
