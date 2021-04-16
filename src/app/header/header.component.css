@@ -9,12 +9,28 @@ nav {
   nav > div > ul > li > a{
     color: #007bff
   }
+
+  nav > div > ul > li .caret {
+    width: 0;
+    height: 0;
+    border: 4px solid #e2e1e1;
+    border-left: 3px solid transparent ;
+    border-bottom: 5px solid transparent ;
+    border-right: 5px solid transparent ;
+    display: flex;
+    margin-top: 3px;
+    margin-left: 3px;
+    display:inline-block;
+    line-height:6px;
+    vertical-align:middle;
+  }
+
   
   img {
     position: relative;
     left : 0px;
     top : 0px;
-    height : 56px;
+    height : 45px;
     width : 97px;
     padding: 0%;
   }
