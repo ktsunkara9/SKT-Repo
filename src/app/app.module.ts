@@ -7,14 +7,18 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
-import { DailyTasksComponent } from './daily-tasks/daily-tasks.component'
+import { DailyTasksComponent } from './daily-tasks/daily-tasks.component';
+import { BooksComponent } from './books/books.component';
+import { ProductsComponent } from './products/products.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    DailyTasksComponent
+    DailyTasksComponent,
+    BooksComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
