@@ -1,51 +1,65 @@
 <nav class="navbar navbar-expand-sm">
 
-    <img src="assets/Lion.jpg" class="navbar-brand">
-  
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" >
-      <span class="navbar-toggler-icon" ></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav mx-auto text-md-center">
-        <li class="nav-item">
-          <a href="#" class="nav-link" [routerLink]="['/']"> 
-            <b>Home</b>&nbsp;<span class="caret"></span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link" [routerLink]="['/tasks']"> 
-            <b>Tasks</b>&nbsp;<span class="caret"></span>  
-          </a>
-        </li>
+  <img src="assets/Lion.jpg" class="navbar-brand">
 
-        <!-- <li class="nav-item">
-          <a href="#" class="nav-link" [routerLink]="['/dailyTasks']"> <b>DailyTasks</b> </a>
-        </li> -->
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" >
+    <span class="navbar-toggler-icon" ></span>
+  </button>
 
-        <li class="nav-item">
-          <a href="#" class="nav-link"> 
-            <b>Archived</b>&nbsp;<span class="caret"></span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"> 
-            <b>About</b>&nbsp;<span class="caret"></span>
-          </a>
-        </li>
-      </ul>
-  
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="#" class="nav-link" style="border: 1px solid white; border-radius: 5px;"> <b>Login</b>  </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link" style="border: 1px solid white; border-radius: 5px;"> <b>Register</b>  </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
+  <div class="collapse navbar-collapse" id="navbarMenu">
+    <ul class="navbar-nav mx-auto text-md-center">
+      <li class="nav-item">
+        <a href="#" class="nav-link" [routerLink]="['/']"> 
+          <b>Home</b>&nbsp;<span class="caret"></span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" [routerLink]="['/tasks']"> 
+          <b>Tasks</b>&nbsp;<span class="caret"></span>  
+        </a>
+      </li>
+
+      <!-- <li class="nav-item">
+        <a href="#" class="nav-link" [routerLink]="['/dailyTasks']"> <b>DailyTasks</b> </a>
+      </li> -->
+
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown">
+          <b> <i>Shop</i> </b>&nbsp;<span class="caret"></span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+          <a href="#" class="dropdown-item"> Books </a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link"> 
+          <b>Archived</b>&nbsp;<span class="caret"></span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link"> 
+          <b>About</b>&nbsp;<span class="caret"></span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link" style="border: 1px solid white; border-radius: 5px;"> 
+          <b>Login</b>  
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link"></a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" style="border: 1px solid white; border-radius: 5px;"> 
+          <b>Register</b>  
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    
